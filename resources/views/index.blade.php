@@ -5,16 +5,16 @@
 <div class="container-fluid position-relative p-0">
     <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" style="height: 50%;">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item active carousel-image-container">
                         <img class="w-100" style="width: 50%;" src="images/imagen1.jpg" alt="Image">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 900px;">
-                                <h1 class="fw-bold text-primary text-uppercase mb-3 animated slideInDown">Grandes Ofertas</h1>
+                                <h1 class="fw-bold text-black text-uppercase mb-3 animated slideInDown">Grandes Ofertas</h1>
                                 <h1 class="display-1 text-white mb-md-4 animated zoomIn">Para que te lleves tus zapatos a mejor precio.</h1>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item carousel-image-container">
                         <img class="w-100" src="images/imagen2.jpg" alt="Image">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 900px;">
@@ -23,21 +23,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img class="w-100" src="images/imagen6.jpg" alt="Image">
+                    <div class="carousel-item carousel-image-container">
+                        <img class="w-100" src="images/imagen3.jpg" alt="Image">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 900px;">
-                                <h1 class="fw-bold text-primary text-uppercase mb-3 animated slideInDown">Los mejores zapatos de la zona</h1>
-                                <h1 class="display-1 text-white mb-md-4 animated zoomIn">La más alta calidad al mejor precio</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="w-100" src="images/imagen5.jpg" alt="Image">
-                        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                            <div class="p-3" style="max-width: 900px;">
-                                <h1 class="fw-bold text-primary text-uppercase mb-3 animated slideInDown">Los mejores zapatos de la zona</h1>
-                                <h1 class="display-1 text-white mb-md-4 animated zoomIn">La más alta calidad al mejor precio</h1>
+                                <h1 class="fw-bold text-primary text-uppercase mb-3 animated slideInDown">Tus marcas Favoritas</h1>
+                                <h1 class="display-1 text-white mb-md-4 animated zoomIn">Para que estes siempre a la moda</h1>
                             </div>
                         </div>
                     </div>
@@ -66,7 +57,7 @@
                     <div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
                         <p class="mb-4 text-justify" style="margin-top:0px;">
                             CrunchyShoe siempre esta pendiente para cualquier zapato que necesites, desde uno tennis para
-                            correr, hasta unos zapatos deportivos de alta gamma, nuestro composimo no solo es vender zapatos, sino
+                            correr, hasta unos zapatos deportivos de alta gamma, nuestro comprosimo no solo es vender zapatos, sino
                             hacer que el cliente tenga lo mejores zapatos a calidad-precio y no necesite estar de tienda en tienda
                             para encontrar sus zapatos deseados, porque aqui en CrunchyShoes tenemos todo tipo de zapatos.
                             <br>Nosotros te ofrecemos lo siguiente:
@@ -89,7 +80,7 @@
             </div>
             <div class="col-lg-5" style="min-height: 300px;">
                 <div class="position-relative h-100">
-                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="images/crunchylogo.png" style="object-fit: cover;">
+                    <img class="position-absolute" data-wow-delay="0.9s" src="images/Crunchy.png" style="object-fit: cover;">
                 </div>
             </div>
         </div>
@@ -128,7 +119,7 @@
         height: calc(100% - 45px);
         top: 135px;
         left: 0;
-        background: linear-gradient(rgba(187, 102, 49, 0.7), rgba(138, 65, 206, 0.6)), url(../images/crunchylogo.png) center center no-repeat;
+        background: linear-gradient(rgba(187, 102, 49, 0.7), rgba(138, 65, 206, 0.6)), url(../images/Crunchy.png) center center no-repeat;
         background-size: cover;
         z-index: -1;
     }
@@ -136,14 +127,14 @@
         position: relative;
     }
 
-.carousel-image-container::before {
+    .carousel-image-container::before {
         content: "";
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(128, 0, 128, 0.3); /* Color púrpura con baja opacidad */
+        background-color: rgba(128, 0, 128, 0.3);
     }
 
 </style>
