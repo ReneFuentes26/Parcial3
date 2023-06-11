@@ -9,7 +9,7 @@
                         <img class="w-100" style="width: 50%;" src="images/imagen1.jpg" alt="Image">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 900px;">
-                                <h5 class="fw-bold text-dark text-uppercase mb-3 animated slideInDown">Grandes Ofertas</h5>
+                                <h1 class="fw-bold text-primary text-uppercase mb-3 animated slideInDown">Grandes Ofertas</h1>
                                 <h1 class="display-1 text-white mb-md-4 animated zoomIn">Para que te lleves tus zapatos a mejor precio.</h1>
                             </div>
                         </div>
@@ -18,7 +18,25 @@
                         <img class="w-100" src="images/imagen2.jpg" alt="Image">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 900px;">
-                                <h5 class="fw-bold text-primary text-uppercase mb-3 animated slideInDown">Los mejores zapatos de la zona</h5>
+                                <h1 class="fw-bold text-black text-uppercase mb-3 animated slideInDown">Los mejores zapatos de la zona</h1>
+                                <h1 class="display-1 text-white mb-md-4 animated zoomIn">La más alta calidad al mejor precio</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100" src="images/imagen6.jpg" alt="Image">
+                        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h1 class="fw-bold text-primary text-uppercase mb-3 animated slideInDown">Los mejores zapatos de la zona</h1>
+                                <h1 class="display-1 text-white mb-md-4 animated zoomIn">La más alta calidad al mejor precio</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100" src="images/imagen5.jpg" alt="Image">
+                        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h1 class="fw-bold text-primary text-uppercase mb-3 animated slideInDown">Los mejores zapatos de la zona</h1>
                                 <h1 class="display-1 text-white mb-md-4 animated zoomIn">La más alta calidad al mejor precio</h1>
                             </div>
                         </div>
@@ -113,6 +131,19 @@
         background: linear-gradient(rgba(187, 102, 49, 0.7), rgba(138, 65, 206, 0.6)), url(../images/crunchylogo.png) center center no-repeat;
         background-size: cover;
         z-index: -1;
+    }
+    .carousel-image-container {
+        position: relative;
+    }
+
+.carousel-image-container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(128, 0, 128, 0.3); /* Color púrpura con baja opacidad */
     }
 
 </style>

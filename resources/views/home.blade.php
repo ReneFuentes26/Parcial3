@@ -15,6 +15,9 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+                    <div class="d-grid gap-2">
+                        <a href="/" class="btn btn-success"  type="button">Inicio</a>
+                     </div>
                 </div>
             </div>
         </div>
