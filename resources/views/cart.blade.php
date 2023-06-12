@@ -50,7 +50,7 @@
                 <div>
                     <form action="{{ route('cart.clear') }}" method="POST">
                         @csrf
-                        <button class="btn btn-info btn-block btn-lg">Limpiar Carrito</button>
+                        <button class="btn btn-danger btn-block btn-lg">Limpiar Carrito</button>
                     </form>
                 </div>
             </div>
