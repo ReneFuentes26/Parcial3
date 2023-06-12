@@ -37,9 +37,7 @@
                         <div class="float-right">
                             <img src="{{ asset('images/crunchylogo.png') }}" alt="Logo" style="max-width: 100px;">
                         </div>
-                    </div>
-                        
-
+                        </div>
                     </div>
                 </div>
             </div>

@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
  * Class Zapato
  *
  * @property $id
- * @property $model
+ * @property $name
  * @property $descripcion
  * @property $price
  * @property $cantidad
@@ -20,12 +20,13 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Zapato extends Model
 {
-    
+
     static $rules = [
-		'model' => 'required',
+		'name' => 'required',
 		'descripcion' => 'required',
 		'price' => 'required',
 		'cantidad' => 'required',
+        'image'=>'required',
     ];
 
     protected $perPage = 20;

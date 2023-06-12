@@ -26,15 +26,22 @@
                             <div class="card-group">
                                 <div class="card">
                                   <div class="card-body">
-                                    <h5 class="card-title">{{ $zapato->model }}</h5>
+                                    <h5 class="card-title">{{ $zapato->name }}</h5>
                                     <div class="text-center">
                                         <img src="{{$zapato->image}}" class="rounded" width="350" height="250">
                                     </div>
                                     <p class="card-text"><h3>${{ $zapato->price }}</h3></p>
                                     <p class="card-text"><h3>Quedan en existencia: {{ $zapato->cantidad }}</h3></p>
-                                    <div class="d-grid gap-2 col-6 mx-auto">
-                                        <a class="btn btn-sm btn-primary" href="{{ route('zapatos.show',$zapato->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Show') }}</a>
-                                    </div>
+                                    <form action="{{ route('cart.store') }}" method="POST" enctype="multipart/form-data" class="flex justify-end">
+                                        @csrf
+                                        <input type="hidden" value="{{ $zapato->id }}" name="id">
+                                        <input type="hidden" value="{{ $zapato->name }}" name="name">
+                                        <input type="hidden" value="{{ $zapato->price }}" name="price">
+                                        <input type="hidden" value="{{ $zapato->image }}"  name="image">
+                                        <input type="hidden" value="1" name="quantity">
+                                        <button class="px-4 py-1.5 text-black text-sm bg-white-900 rounded">Agregar al Carrito</button>
+                                        <button class="px-4 py-1.5 text-black text-sm bg-white-900 rounded"><a href="{{ route('zapatos.show',$zapato->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Ver Producto') }}</a></button>
+                                    </form>
                                 </div>
                                 </div>
                               </div>

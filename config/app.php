@@ -160,6 +160,7 @@ return [
          * Package Service Providers...
          */
         Laravel\Socialite\SocialiteServiceProvider::class,
+        Darryldecode\Cart\CartServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -185,4 +186,5 @@ return [
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
     'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+    'Cart' => Darryldecode\Cart\Facades\CartFacade::class,
 ];
