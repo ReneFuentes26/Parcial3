@@ -21,8 +21,15 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="{{ asset('images/crunchylogo.png') }}" alt="Logo" style="max-height: 30px;">
+                    <img src="{{ asset('images/crunchylogo.png') }}" alt="Logo" style="max-height: 120px; max-width: 150px;">
                 </a>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                    <a class="texto-titulo-navbar" href="{{ url('/zapatos') }}">
+                        catalogo
+                    </a>
+                    </li>
+                </ul>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -84,4 +91,17 @@
         </main>
     </div>
 </body>
+
+<style>
+    .texto-titulo-navbar{
+        font-size: 30px;
+        font-weight: bold; 
+        text-shadow:
+                1px 1px 1px orange,
+                2px 2px 1px orange,
+                3px 3px 1px orange;
+        color: white;
+    }
+
+</style>
 </html>

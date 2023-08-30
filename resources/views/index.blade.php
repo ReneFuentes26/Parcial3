@@ -9,7 +9,7 @@
                         <img class="w-100" style="width: 50%;" src="images/imagen1.jpg" alt="Image">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 900px;">
-                                <h1 class="fw-bold text-black text-uppercase mb-3 animated slideInDown">Grandes Ofertas</h1>
+                                <h1 class="texto-titulo">Grandes Ofertas</h1>
                                 <h1 class="display-1 text-white mb-md-4 animated zoomIn">Para que te lleves tus zapatos a mejor precio.</h1>
                             </div>
                         </div>
@@ -18,7 +18,7 @@
                         <img class="w-100" src="images/imagen2.jpg" alt="Image">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 900px;">
-                                <h1 class="fw-bold text-black text-uppercase mb-3 animated slideInDown">Los mejores zapatos de la zona</h1>
+                                <h1 class="texto-titulo">Los mejores zapatos de la zona</h1>
                                 <h1 class="display-1 text-white mb-md-4 animated zoomIn">La más alta calidad al mejor precio</h1>
                             </div>
                         </div>
@@ -27,7 +27,7 @@
                         <img class="w-100" src="images/imagen3.jpg" alt="Image">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 900px;">
-                                <h1 class="fw-bold text-primary text-uppercase mb-3 animated slideInDown">Tus marcas Favoritas</h1>
+                                <h1 class="texto-titulo">Tus marcas Favoritas</h1>
                                 <h1 class="display-1 text-white mb-md-4 animated zoomIn">Para que estes siempre a la moda</h1>
                             </div>
                         </div>
@@ -52,7 +52,7 @@
         <div class="row g-5">
             <div class="col-lg-7">
                 <div class="position-relative pb-3 mb-5" style="margin-bottom: 0px;">
-                    <h5 class="fw-bold text-primary text-uppercase">Sobre nosotros</h5>
+                    <h5 class="texto-titulo">Sobre nosotros</h5>
                     <h1 class="mb-0">Nuestro compromiso contigo.</h1><br>
                     <div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
                         <p class="mb-4 text-justify" style="margin-top:0px;">
@@ -64,16 +64,7 @@
                         </p>
 
                     </div>
-                    <div class="row g-0 mb-3">
-                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Mejores precios.</h5>
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Increibles productos.</h5>
-                        </div>
-                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Ofertas especiales.</h5>
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Estar siempre para tí.</h5>
-                        </div>
-                    </div>
+                   
 
                     <a href="{{url('integrante')}}" class="btn btn-primary py-3 w-100 px-5 mt-3 wow zoomIn text-center" data-wow-delay="0.9s" style="color:white; font-weight: bold;">Nuestro equipo</a>
                 </div>
@@ -135,6 +126,16 @@
         width: 100%;
         height: 100%;
         background-color: rgba(128, 0, 128, 0.3);
+    }
+
+    .texto-titulo{
+        font-size: 60px;
+        font-weight: bold; 
+        text-shadow:
+                1px 1px 1px orange,
+                2px 2px 1px orange,
+                3px 3px 1px orange;
+        color: white;
     }
 
 </style>

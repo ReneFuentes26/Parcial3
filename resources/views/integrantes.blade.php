@@ -19,10 +19,10 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img src="images/mondragon.jfif" class="rounded mx-auto d-block" height="600" width="400">
+        <img src="" class="rounded mx-auto d-block" height="600" width="400">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Oscar Rene Mondragon Orellana</h5>
-          <p>SMIS081919.</p>
+          <h5></h5>
+          <p></p>
         </div>
       </div>
       <div class="carousel-item text-center">
@@ -56,5 +56,17 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+
+<style>
+  .texto-titulo{
+        font-size: 60px;
+        font-weight: bold; 
+        text-shadow:
+                1px 1px 1px orange,
+                2px 2px 1px orange,
+                3px 3px 1px orange;
+        color: white;
+    }
+</style>
 
 @endsection
