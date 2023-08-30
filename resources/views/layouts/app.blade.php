@@ -25,8 +25,8 @@
                 </a>
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                    <a class="texto-titulo-navbar" href="{{ url('/zapatos') }}">
-                        catalogo
+                    <a class="nav-link" href="{{ url('/zapatos') }}">
+                        Catalogo
                     </a>
                     </li>
                 </ul>
@@ -95,7 +95,7 @@
 <style>
     .texto-titulo-navbar{
         font-size: 30px;
-        font-weight: bold; 
+        font-weight: bold;
         text-shadow:
                 1px 1px 1px orange,
                 2px 2px 1px orange,

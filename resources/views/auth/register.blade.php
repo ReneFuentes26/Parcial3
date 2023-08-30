@@ -61,9 +61,26 @@
                             </div>
                         </div>
 
+                        <script type="text/javascript">
+                            function confirmUser()
+                            {
+                                var respuesta = confirm("Estas seguro de registrar el usuario?");
+
+                                if (respuesta == true)
+                                {
+                                    return true;
+                                }
+                                else
+                                {
+                                    return false;
+                                }
+                            }
+                        </script>
+
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" onclick="confirmUser()" class="btn btn-primary">
+
                                     {{ __('Register') }}
                                 </button>
                             </div>

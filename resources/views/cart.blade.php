@@ -29,6 +29,8 @@
                         </div>
                       </div>
                       <div class="h-10 w-28">
+                        <div>
+                        </div>
                         <div class="relative flex flex-row w-full h-8">
                             <form action="{{ route('cart.update') }}" method="POST">
                                 @csrf
